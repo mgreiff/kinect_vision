@@ -1,0 +1,18 @@
+<launch>
+  <arg
+    name="cfg_file"
+    default="default.cfg"
+  />
+  <group>
+    <include
+    file="$(find openni_launch)/launch/openni.launch"
+    />
+  </group>
+  <node
+    name="kinectNode"
+    pkg="kinect_vision"
+    type="kinectNode.py"
+    output="screen"
+    args="$(find kinect_vision)/config/$(arg cfg_file)"
+  />
+</launch>
