@@ -1,5 +1,5 @@
 # kinect_vision
-ROS package for locating small objetcts in space. The package combines the
+ROS package for locating small objects in space. The package combines the
 openni kinect driver with the ros_numpy package and uses a simple tripple 
 integrator model with a Kalman filter and some additional tricks to estimate
 the position and velocities for the object. The software was used to 
